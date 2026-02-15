@@ -6,11 +6,13 @@ export default function FilterLayout({
 }: {
   sidebar: React.ReactNode;
   content: React.ReactNode;
+  modal: React.ReactNode;
 }) {
   return (
     <div className={css.layout}>
       {sidebar}
       {content}
+      {modal}
     </div>
   );
 }
