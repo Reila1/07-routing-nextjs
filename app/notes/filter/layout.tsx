@@ -2,17 +2,15 @@ import css from './LayoutNotes.module.css';
 
 export default function FilterLayout({
   sidebar,
-  content,
+  children,
 }: {
   sidebar: React.ReactNode;
-  content: React.ReactNode;
-  modal: React.ReactNode;
+  children: React.ReactNode;
 }) {
   return (
     <div className={css.layout}>
       {sidebar}
-      {content}
-      {modal}
+      {children}
     </div>
   );
 }
